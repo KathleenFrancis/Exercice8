@@ -1,5 +1,6 @@
- /* normalize */
-@import 'sass/normalize';
+ /* mixins */
+ @import 'sass/site/variables-site/variables-site'; 
+ @import 'sass/mixins/utilities'; 
 
  /* animation */
 @import 'sass/animation/anim-entete';
@@ -7,3 +8,7 @@
  
  /* header */
 @import 'sass/site/header'; 
+
+ /* liste des cours */
+@import 'sass/site/cours/listeCours'; 
+
