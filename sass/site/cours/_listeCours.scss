@@ -15,12 +15,13 @@
         font-size: 5vw;
         color: black;
     }
+
 }
 
 .cours {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
     padding: 1em;
 
     .entry-title {
@@ -37,6 +38,7 @@
 @include media(mobile) {
     .cours {
         grid-template-columns: 1fr 1fr; 
+        .entry-title {background-color: aquamarine;}
     }
 }
 
@@ -44,19 +46,28 @@
 @include media(tablet) {
     .cours {
         grid-template-columns: 1fr 1fr 1fr; 
+        .entry-title {background-color: rgb(72, 180, 144);}
     }
 }
 
 // ---------------------------- Desktop
 @include media(desktop) {
     .cours {
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .entry-title {
+            background-color: rgb(42, 129, 100);
+            a{color: #57c9ff;}
+        }
     }
 }
 
 // ---------------------------- WIDE
 @include media(wide) {
     .cours {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        .entry-title a{
+            background-color: rgb(14, 109, 77);
+            a{color: #57c9ff;}
+        }
     }
 }

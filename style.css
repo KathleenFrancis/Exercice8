@@ -201,8 +201,8 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 1em;
 }
 
@@ -216,12 +216,18 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .cours .entry-title {
+    background-color: aquamarine;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .cours {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cours .entry-title {
+    background-color: #48b490;
   }
 }
 
@@ -230,12 +236,24 @@
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .cours .entry-title {
+    background-color: #2a8164;
+  }
+  .cours .entry-title a {
+    color: #57c9ff;
+  }
 }
 
 @media only screen and (min-width: 1379px) {
   .cours {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .cours .entry-title a {
+    background-color: #0e6d4d;
+  }
+  .cours .entry-title a a {
+    color: #57c9ff;
   }
 }
 /*# sourceMappingURL=style.css.map */
