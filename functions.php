@@ -7,6 +7,9 @@ $parent_style = 'twentynineteen-style'; // This is 'twentynineteen-style' for th
 
 wp_enqueue_style ( $parent_style, get_template_directory_uri() .'/style.css' );
 
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Righteous', false );
+
+
 wp_enqueue_style(
 'twentynineteen-style-enfant',
 get_stylesheet_directory_uri() .'/style.css',

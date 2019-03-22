@@ -1,20 +1,21 @@
-/*.animPS{
-    animation: ambiance 5s;
+.emoji{
+    animation: animEmoji 5s;
     animation-fill-mode: forwards;
     position: relative;
     animation-iteration-count: infinite;
-}*/
+}
 
-@keyframes ambiance {
+@keyframes animEmoji {
     from {
         opacity:0;
-        font-size:0.8em;
+        scale:0;
     }
     50% {
-        font-size:1em;
+        scale:1;
     }
     to {
         opacity:1;
-        font-size:0.8em;
+        scale:0;
     }
 }
+

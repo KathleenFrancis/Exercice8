@@ -22,6 +22,7 @@ get_header();
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
+			
 			<section class="cours">
 			<?php
 			// Start the Loop.

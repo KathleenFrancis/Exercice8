@@ -1,3 +1,16 @@
+/*
+ Theme Name:   Twenty nineteen Enfant exo8
+ Theme URI:    http://referenced.ca
+ Description:  Twenty nineteen enfant Theme
+ Author:       Eddy Martin
+ Author URI:   http: //referenced.ca
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-nineteen-enfant-exo8
+*/
 /* mixins */
 /*
  * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
@@ -80,16 +93,12 @@
   }
 }
 
-.animPS {
-  -webkit-animation: ambiance 5s;
-          animation: ambiance 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  position: relative;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
+/*.animPS{
+    animation: ambiance 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-iteration-count: infinite;
+}*/
 @-webkit-keyframes ambiance {
   from {
     opacity: 0;
@@ -103,7 +112,6 @@
     font-size: 0.8em;
   }
 }
-
 @keyframes ambiance {
   from {
     opacity: 0;
@@ -119,7 +127,62 @@
 }
 
 /* header */
+.site-title a {
+  font-size: 12vw;
+  font-family: 'Righteous', cursive;
+}
+
+.site-description {
+  margin: 0 120%;
+}
+
+.entry-title {
+  font-size: 4vw;
+}
+
+.emoji {
+  -webkit-animation: animEmoji 5s;
+          animation: animEmoji 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animEmoji {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  50% {
+    scale: 1;
+  }
+  to {
+    opacity: 1;
+    scale: 0;
+  }
+}
+
+@keyframes animEmoji {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  50% {
+    scale: 1;
+  }
+  to {
+    opacity: 1;
+    scale: 0;
+  }
+}
+
 /* liste des cours */
+.page-header {
+  padding: -1em -4em;
+}
+
 .cours {
   display: -ms-grid;
   display: grid;
@@ -127,6 +190,10 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   padding: 1em;
+}
+
+.entry-title {
+  font-size: 1.2em;
 }
 
 /*=================================== MEDIAS QUERIES =============================*/
