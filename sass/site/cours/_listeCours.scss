@@ -1,5 +1,20 @@
-.page-header {
-    padding: -1em -4em;
+.site-branding {
+    .site-title a{
+        color: purple; 
+    }
+    .site-description {
+        color: white;
+        background: grey;
+    }
+}
+
+#liste-cours {
+    margin-bottom:0 ;
+
+    .titre-tableau {
+        font-size: 5vw;
+        color: black;
+    }
 }
 
 .cours {
@@ -7,11 +22,14 @@
     grid-gap: 1em;
     grid-template-columns: 1fr; 
     padding: 1em;
+
+    .entry-title {
+        font-size:  1.2em;
+    }
+
 }
 
-.entry-title {
-    font-size:  1.2em;
-}
+
 
 /*=================================== MEDIAS QUERIES =============================*/
 

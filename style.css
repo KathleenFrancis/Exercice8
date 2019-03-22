@@ -179,8 +179,22 @@
 }
 
 /* liste des cours */
-.page-header {
-  padding: -1em -4em;
+.site-branding .site-title a {
+  color: purple;
+}
+
+.site-branding .site-description {
+  color: white;
+  background: grey;
+}
+
+#liste-cours {
+  margin-bottom: 0;
+}
+
+#liste-cours .titre-tableau {
+  font-size: 5vw;
+  color: black;
 }
 
 .cours {
@@ -192,7 +206,7 @@
   padding: 1em;
 }
 
-.entry-title {
+.cours .entry-title {
   font-size: 1.2em;
 }
 
